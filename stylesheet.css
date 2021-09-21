@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color:#FDF5FD ;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Overpass Mono', monospace;
+}
+
+.nav-list{
+    background-color: white;
+    box-shadow: 0 0.5px 4px 0 rgba(0,0,0,.2);
+    font-family: 'Overpass Mono', monospace;
+    font-weight: 300;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 16px;
+    position: fixed;
+    height: 40px;
+    width:100vw;
+
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 1rem;
+    padding-left: 4rem;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav-item a:hover{
+    font-weight: 700;
+    color:#CC0000;
+}
+
+
+.nav-item:first-child{
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+#Hamburger {
+    display: none;
+  }
+  
+  @media (max-width :800px) {
+  .nav-item{
+      display: none;
+    }
+    .nav-item:first-child{
+        display: flex;
+        margin-right: auto;
+        margin-left: 2rem;
+    }
+
+    .nav-item:last-child{
+        display: flex;
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+  
+    #Hamburger{
+      display: block;
+    }
+    
+  }
+
+  .logo-split{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+  .logo-main{
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    padding-left: 5rem;
+    padding-top: 1rem;
+    position: relative;
+    
+}
+
+@media (max-width :800px) {
+    .logo-main{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding-left: 0;
+        padding-top: 7rem;
+        position: relative;
+        
+    }
+}
+
+
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+}
+
+.flex-left {
+    width: 30%;
+    padding-top: 1rem;
+    padding-left: 5rem;
+}
+
+.flex-right {
+    display: flex;
+    width: 70%;
+    background-image: url(img/Cupid_red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 465px 473px;
+    position: relative;
+    z-index: -1;
+   
+}
+
+.flex-left li{
+    border-top: 2px solid black;
+    padding-top: 5px;
+    margin-top: 25px;
+}
+
+.project-items span{
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.logo-split-bottom{
+    display: flex;
+    position: absolute;
+    bottom: 60px;
+}
+
+.logo-split-bottom svg{
+    justify-content: center;
+}
+
+@media (max-width :800px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        font-family: 'EB Garamond', serif;
+    }
+        
+    }
+
+    #footer {
+        position: fixed;
+        padding: 10px 0px 10px 10px;
+        bottom: 0;
+        width: 100vw; 
+        height: 40px;
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 300;
+    }
+
+
